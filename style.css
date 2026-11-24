@@ -1,0 +1,13 @@
+:root { --desk:#1c2636; --paper:#eeeae0; --ink:#1d1d1f; --red:#d2392d; --tape:#f2c230; --muted:#5a5a60; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--desk); color: var(--ink); font: 17px/1.6 "Big Shoulders", system-ui, sans-serif; }
+.tape { height: 22px; background: repeating-linear-gradient(-45deg, var(--tape) 0 24px, #111 24px 38px); }
+main { max-width: 760px; margin: 48px auto; padding: 44px 48px 56px; background: var(--paper); box-shadow: 0 30px 60px #0009; transform: rotate(-.4deg); }
+h1 { font-weight: 900; font-size: 52px; line-height: 1; letter-spacing: -1px; margin: 0 0 8px; }
+h2 { font-weight: 800; font-size: 28px; margin: 36px 0 8px; }
+p, li { font-family: Georgia, "Times New Roman", serif; font-size: 17px; }
+.note { font-family: "Permanent Marker", cursive; color: var(--red); font-size: 22px; transform: rotate(-2deg); display: inline-block; margin-bottom: 18px; }
+a { color: var(--red); }
+nav { margin-top: 40px; font-size: 18px; }
+nav a { margin-right: 22px; }
+@media (max-width: 640px) { main { margin: 20px 12px; padding: 28px 22px; transform: none; } h1 { font-size: 40px; } }
